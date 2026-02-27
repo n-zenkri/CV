@@ -41,4 +41,23 @@
     ul {
         font-size: 19px;
     }
+    /* VERSION TELEPHONE */
+@media (max-width: 768px) {
 
+    body {
+        padding: 10px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
