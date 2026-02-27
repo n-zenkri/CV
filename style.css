@@ -41,23 +41,34 @@
     ul {
         font-size: 19px;
     }
-    /* VERSION TELEPHONE */
+   /* VERSION TELEPHONE */
 @media (max-width: 768px) {
 
-    body {
-        padding: 10px;
-    }
+  /* 1) on passe en 1 seule colonne */
+  main{
+    grid-template-columns: 1fr !important;
+  }
 
-    .grid {
-        grid-template-columns: 1fr;
-    }
+  /* 2) on enlève la séparation verticale (sinon ça coupe et ça gêne) */
+  #mainLeft{
+    border-right: none !important;
+  }
 
-    header {
-        text-align: center;
-    }
+  /* 3) on évite le débordement du titre */
+  #header{
+    display: block !important;       /* au lieu de grid en colonnes */
+    letter-spacing: 3px !important;  /* 12px est trop grand sur tel */
+    font-size: 16px !important;      /* au lieu de 20px */
+    margin: 16px 12px !important;
+  }
 
-    img {
-        width: 100%;
-        height: auto;
-    }
+  /* 4) on évite que les sections débordent sur les côtés */
+  section{
+    margin: 12px !important;
+  }
+
+  /* 5) liens/téléphone : on autorise le retour à la ligne */
+  a{
+    word-break: break-word;
+  }
 }
