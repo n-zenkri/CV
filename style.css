@@ -1,0 +1,44 @@
+   body {
+        background-color: rgb(255, 230, 253);
+    }
+
+    #header {
+        position: relative;
+        text-align: center;
+        margin: auto 2em;
+        display: grid;
+        grid-auto-flow: column;
+        place-items: center;
+        letter-spacing: 12px;
+        margin-top: 28px;
+        font-size: 20px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+
+    #mainLeft {
+        border-right-width: 1px;
+        border-right-style: solid;
+    
+    }
+
+    section {
+        margin: auto 1em 4em 2em;
+    }
+
+    p{
+        margin: 0.2em auto;
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    ul {
+        font-size: 19px;
+    }
+
